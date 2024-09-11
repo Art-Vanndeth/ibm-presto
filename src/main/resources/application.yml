@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:presto://1231d1aa-340c-4c01-a98c-c80f67677f61.co1u05ot0jqujbai8j2g.lakehouse.appdomain.cloud:30914/iceberg_data?SSL=true
+    username: ibmlhapikey
+    password: i8ESUzFAx-MSffwORTf8kNzWLkfWJWDYF_WR5h80DvCj
+    driver-class-name: com.facebook.presto.jdbc.PrestoDriver
+
+#  jpa:
+#    database-platform: org.hibernate.dialect.PrestoSQL
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.jdbc.core: DEBUG
